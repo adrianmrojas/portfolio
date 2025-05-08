@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adrian Rojas - Flutter Developer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f7f9fc;
+            color: #333;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+        }
+
+        .left,
+        .right {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .left h2 {
+            font-size: 2em;
+            color: #2c3e50;
+        }
+
+        .left h6 {
+            font-weight: 300;
+            color: #7f8c8d;
+            margin-bottom: 20px;
+        }
+
+        .presentacion {
+            margin: 30px 0;
+        }
+
+        .presentacion h5 {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+            color: #34495e;
+        }
+
+        .wrapper {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+        }
+
+        .wrapper a img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .wrapper a img:hover {
+            transform: scale(1.05);
+        }
+
+        .ver-todos {
+            display: inline-block;
+            margin-top: 15px;
+            color: #3498db;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .right {
+            text-align: center;
+            justify-items: center;
+        }
+
+        .right img {
+            width: 150px;
+            border-radius: 50%;
+            border: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+
+        .right a {
+            display: block;
+            margin: 10px 0;
+            text-decoration: none;
+            color: #2c3e50;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        .right a:hover {
+            color: #3498db;
+        }
+
+        .social-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto;
+    padding: 10px 20px;
+    width: 80%;
+    max-width: 250px;
+    background-color: #ffffff;
+    border: 2px solid #3498db;
+    border-radius: 25px;
+    color: #3498db;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.social-button:hover {
+    background-color: #8dc3e7;
+    color: white;
+    transform: translateY(-2px);
+}
+
+
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .right {
+                order: -1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="left">
+            <h2>Adrian Rojas</h2>
+            <h6>Flutter Developer</h6>
+            <div class="presentacion">
+                <h5>Sobre mí</h5>
+                <p>
+                    Soy un apasionado desarrollador Flutter con experiencia creando aplicaciones móviles modernas y
+                    eficientes.
+                    Me encanta construir soluciones que sean funcionales y visualmente atractivas.
+                </p>
+            </div>
+
+            <h5>Mis proyectos</h5>
+            <div class="wrapper">
+                <a href="https://github.com/adrianmrojas/" target="_blank">
+                    <img src="img/pagina-inicio-vista-pantalla-computadora_23-2149416723.webp"
+                        alt="Proyecto 1">
+                </a>
+                <a href="https://github.com/adrianmrojas/" target="_blank">
+                    <img src="img/pagina-inicio-vista-pantalla-computadora_23-2149416723.webp"
+                        alt="Proyecto 2">
+                </a>
+                <a href="https://github.com/adrianmrojas/" target="_blank">
+                    <img src="img/pagina-inicio-vista-pantalla-computadora_23-2149416723.webp"
+                        alt="Proyecto 3">
+                </a>
+                <a href="https://github.com/adrianmrojas/" target="_blank">
+                    <img src="img/pagina-inicio-vista-pantalla-computadora_23-2149416723.webp"
+                        alt="Proyecto 4">
+                </a>
+                <a href="https://github.com/adrianmrojas/" target="_blank">
+                    <img src="img/pagina-inicio-vista-pantalla-computadora_23-2149416723.webp"
+                        alt="Proyecto 5">
+                </a>
+                <a href="https://github.com/adrianmrojas/" target="_blank">
+                    <img src="img/pagina-inicio-vista-pantalla-computadora_23-2149416723.webp"
+                        alt="Proyecto 6">
+                </a>
+            </div>
+            <a class="ver-todos" href="https://github.com/adrianmrojas/" target="_blank">→ Ver todos</a>
+        </div>
+
+        <div class="right">
+            <img src="img/119682964.webp" alt="Adrian Rojas">
+<a href="https://www.linkedin.com/in/adrurojas/" target="_blank" class="social-button">LinkedIn</a>
+<a href="https://github.com/adrianmrojas/" target="_blank" class="social-button">GitHub</a>
+<a href="https://www.fiverr.com/adrianmrojas" target="_blank" class="social-button">Fiverr</a>
+<a href="https://www.instagram.com/adrianmrojas" target="_blank" class="social-button">Instagram</a>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
